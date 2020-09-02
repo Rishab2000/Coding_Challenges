@@ -1,0 +1,139 @@
+body {
+  width: 100%;
+  height: 100vh;
+  padding-top: 1px;
+  box-sizing: border-box;
+  margin: -1px 0px 0px;
+  background: #fdfdfe;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  color: unset;
+  font: unset;
+}
+
+.bold {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: calc(0.7rem + 1vw);
+}
+
+.caption {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 300;
+  font-size: calc(0.4rem + 1vw);
+}
+
+.button_text {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: calc(0.5rem + 1vw);
+}
+
+.button_style {
+  margin: 10% auto;
+  width: 6.4rem;
+  height: 1.8rem;
+  display: block;
+  border: 1px solid #e8505b;
+  border-radius: 1rem;
+  background-color: unset;
+}
+
+.card {
+  box-shadow: 2px 2px 24px -10px rgba(24, 50, 119, 0.3);
+  background: #fdfdfe;
+  color: #14b1ab;
+  border-radius: 0.6rem;
+  overflow: hidden;
+  width: 80%;
+  display: flex;
+  height: 18rem;
+  margin: 10% auto;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  width: 65%;
+  height: 100%;
+}
+
+.profile_container {
+  position: relative;
+}
+.two {
+  display: flex;
+  border-radius: 100px;
+  width: calc(5.4rem + 1vw);
+  height: calc(5.4rem + 1vw);
+  border: 1px solid red;
+  border-top-color: #fff;
+  transform: rotate(90deg);
+  transition: transform 1.6s ease-in-out;
+  margin: auto; 
+}
+
+.two:hover{
+ cursor: pointer;
+ transform: rotate(450deg);
+}
+
+.one {
+  display: flex;
+  margin: auto;
+  border-radius: 100px;
+  width: calc(4.6rem + 1vw);
+  height: calc(4.6rem + 1vw);
+  border: 1px solid red;
+  border-top-color: #fff;
+  transform: rotate(180deg);
+  transition: transform 1.6s ease-in-out;
+}
+
+.two:hover .one{
+ transform: rotate(-540deg);
+}
+
+.profile_pic {
+  transform: rotate(-270deg);
+  border-radius: 100px;
+  width: calc(4rem + 1vw);
+  height: calc(4rem + 1vw);
+  transition: transform 1.6s ease-in-out;
+  margin: auto;
+}
+
+.two:hover .profile_pic{
+ transform: rotate(90deg);
+}
+
+.name {
+  margin-top: 10%;
+}
+
+.stats {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.stats_container {
+  background: #f3ecc2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 32.8%;
+  text-align: center;
+}
