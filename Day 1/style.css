@@ -17,12 +17,14 @@ button {
 }
 
 .bold {
+  color: #ff2e63;
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 500;
   font-size: calc(0.7rem + 1vw);
 }
 
 .caption {
+  color: #fc8686;
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 300;
   font-size: calc(0.4rem + 1vw);
@@ -35,22 +37,29 @@ button {
 }
 
 .button_style {
+  color: #ff2e63;
   margin: 10% auto;
   width: 6.4rem;
   height: 1.8rem;
   display: block;
-  border: 1px solid #e8505b;
+  border: 1px solid #ff9d9d;
   border-radius: 1rem;
   background-color: unset;
+  transition: all 0.2s ease-in-out;
+}
+
+.button_style:hover {
+  background: #010a43;
+  color: #fdfdfe;
+  border: 0px;
 }
 
 .card {
   box-shadow: 2px 2px 24px -10px rgba(24, 50, 119, 0.3);
   background: #fdfdfe;
-  color: #14b1ab;
   border-radius: 0.6rem;
   overflow: hidden;
-  width: 80%;
+  max-width: 80%;
   display: flex;
   height: 18rem;
   margin: 10% auto;
@@ -74,16 +83,16 @@ button {
   border-radius: 100px;
   width: calc(5.4rem + 1vw);
   height: calc(5.4rem + 1vw);
-  border: 1px solid red;
+  border: 1px solid #ff2e63;
   border-top-color: #fff;
   transform: rotate(90deg);
   transition: transform 1.6s ease-in-out;
-  margin: auto; 
+  margin: auto;
 }
 
-.two:hover{
- cursor: pointer;
- transform: rotate(450deg);
+.two:hover {
+  cursor: pointer;
+  transform: rotate(450deg);
 }
 
 .one {
@@ -92,14 +101,14 @@ button {
   border-radius: 100px;
   width: calc(4.6rem + 1vw);
   height: calc(4.6rem + 1vw);
-  border: 1px solid red;
+  border: 1px solid #ff2e63;
   border-top-color: #fff;
   transform: rotate(180deg);
   transition: transform 1.6s ease-in-out;
 }
 
-.two:hover .one{
- transform: rotate(-540deg);
+.two:hover .one {
+  transform: rotate(-540deg);
 }
 
 .profile_pic {
@@ -111,8 +120,8 @@ button {
   margin: auto;
 }
 
-.two:hover .profile_pic{
- transform: rotate(90deg);
+.two:hover .profile_pic {
+  transform: rotate(90deg);
 }
 
 .name {
@@ -128,7 +137,7 @@ button {
 }
 
 .stats_container {
-  background: #f3ecc2;
+  background: #ffc2c2;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -136,4 +145,99 @@ button {
   width: 100%;
   height: 32.8%;
   text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.stats_container:hover {
+  background: #fda9a9;
+}
+
+@media only screen and (min-width: 576px) {
+  .bold {
+    color: #ff2e63;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 500;
+    font-size: calc(0.7rem + .8vw);
+  }
+
+  .caption {
+    color: #fc8686;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 300;
+    font-size: calc(0.4rem + .8vw);
+  }
+
+  .button_text {
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 500;
+    font-size: calc(0.5rem + .5vw);
+  }
+
+  .button_style {
+  color: #ff2e63;
+  margin: 10% auto;
+  width: 8rem;
+  height: 1.8rem;
+  display: block;
+  border: 1px solid #ff9d9d;
+  border-radius: 1rem;
+  background-color: unset;
+  transition: all 0.2s ease-in-out;
+}
+
+  .card {
+    box-shadow: 2px 2px 24px -10px rgba(24, 50, 119, 0.3);
+    background: #fdfdfe;
+    border-radius: 0.6rem;
+    overflow: hidden;
+    max-width: 33rem;
+    display: flex;
+    height: 18rem;
+    margin: 10% auto;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .bold {
+    color: #ff2e63;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+  }
+
+  .caption {
+    color: #fc8686;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 300;
+    font-size: .9rem;
+  }
+
+  .button_text {
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 500;
+    font-size: .9rem;
+  }
+
+  .button_style {
+  color: #ff2e63;
+  margin: 10% auto;
+  width: 13rem;
+  height: 2.4rem;
+  display: block;
+  border: 1px solid #ff9d9d;
+  border-radius: 1rem;
+  background-color: unset;
+  transition: all 0.2s ease-in-out;
+}
+
+  .card {
+    box-shadow: 2px 2px 24px -10px rgba(24, 50, 119, 0.3);
+    background: #fdfdfe;
+    border-radius: 0.6rem;
+    overflow: hidden;
+    max-width: 40rem;
+    display: flex;
+    height: 25rem;
+    margin: 10% auto;
+  }
 }
