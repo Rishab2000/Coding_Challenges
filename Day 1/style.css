@@ -197,7 +197,7 @@ button {
   }
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 992px) {
   .bold {
     color: #ff2e63;
     font-family: "Noto Sans KR", sans-serif;
