@@ -150,7 +150,7 @@ button {
 }
 
 .bounce-2 {
-  animation-delay: -1s;
+  animation-delay: -0.5s;
 }
 
 @keyframes bounce {
@@ -170,6 +170,16 @@ button {
   height: 1.3rem;
   width: 5rem;
   margin-left: 1rem;
+}
+
+.done-icon{
+  fill: #57C3AD;
+  display: none;
+  margin-bottom: 5%;
+}
+
+.done-icon-show{
+  display: block;
 }
 
 .change-button {

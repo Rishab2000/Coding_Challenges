@@ -43,6 +43,7 @@ $(".done-button").on("click", function () {
   setTimeout(function () {
     loaderAnimation();
     lineMove();
-    $(".file-name").html("DONE")
+    $(".file-name").html("File Uploaded")
+    $(".done-icon").toggleClass("done-icon-show")
   }, 5000);
 });
