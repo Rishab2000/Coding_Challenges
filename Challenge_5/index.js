@@ -1,23 +1,16 @@
 var i = 1;
 
 function cardCycle() {
-  if (i < 5) {
-    $(".card-" + i).toggleClass("fade-out");
-    console.log(".card-" + i);
-    $(".card-" + (i + 1)).toggleClass("fade-in");
-    i++;
-    console.log(i);
-  }
-  if (i == 4) {
-    i = 1;
-    console.log(i);
-    $(".card-1").toggleClass("fade-out");
-    $(".card-2").toggleClass("fade-out").toggleClass("fade-in");
-    $(".card-3").toggleClass("fade-in");
-    setTimeout(function () {
-      $(".card-3").toggleClass("fade-out");
-    }, 1000);
-  }
+  $(`.card-${i}`).toggleClass("fade-in");
+  $(`.card-${i}`).toggleClass("fade-out");
+  i = (i + 1) % 4 ? i + 1 : 1;
+
+  // Left side of question mark is the condition for the cycle if it is true (i+1) excutes and if its false (1) makes i = 1
+
+  //? acts as an if statement right hand of the colon (:) excutes of the condition is true and left hand side if the condition is false
+
+  $(`.card-${i}`).removeClass("fade-out");
+  $(`.card-${i}`).addClass("fade-in");
 }
 
 $(".button").on("click", function () {
