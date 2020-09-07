@@ -49,7 +49,6 @@ button {
   border-color: #ffffff;
 }
 
-
 .finish-animate {
   animation-name: finish;
   animation-duration: 0.5s;
@@ -69,7 +68,7 @@ button {
 }
 
 .check-animate {
- display: block;
+  display: block;
   animation: check 0.2s ease-out 2.9s;
   animation-fill-mode: forwards;
 }
