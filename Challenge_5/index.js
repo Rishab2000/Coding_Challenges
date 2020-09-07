@@ -12,8 +12,7 @@ function cardCycle() {
     i = 1;
     console.log(i);
     $(".card-1").toggleClass("fade-out");
-    $(".card-2").toggleClass("fade-out");
-    $(".card-2").toggleClass("fade-in");
+    $(".card-2").toggleClass("fade-out").toggleClass("fade-in");
     $(".card-3").toggleClass("fade-in");
     setTimeout(function () {
       $(".card-3").toggleClass("fade-out");
