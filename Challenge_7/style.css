@@ -1,0 +1,132 @@
+body {
+  width: 100%;
+  height: 100vh;
+  padding-top: 1px;
+  box-sizing: border-box;
+  margin: -1px 0px 0px;
+  background: #fdfdfe;
+}
+
+p {
+  display: inline;
+  margin: 0;
+}
+
+button {
+  display: unset;
+  font: unset;
+  background: #ffffff;
+  outline: none;
+}
+
+.bold {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 600;
+  font-size: calc(0.6rem + 1vw);
+}
+
+.caption {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 300;
+  font-size: calc(0.6rem + 1vw);
+}
+
+.body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: calc(0.6rem + 1vw);
+}
+
+button {
+  margin: 0;
+  border: unset;
+  padding: unset;
+}
+
+p {
+  display: block;
+}
+
+input {
+  padding: 0px;
+  font: unset;
+}
+
+.input-box::placeholder {
+  opacity: 38%;
+  color: rgba(24, 49, 119);
+}
+
+.search-container {
+  margin: 10% auto;
+  height: fit-content;
+  display: flex;
+  flex-flow: column;
+  /* justify-content: space-between; */
+  width: 80%;
+}
+
+.search-container .search {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 2.6rem;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 8px -1px rgba(24, 49, 119, 0.14);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.search-container .search .input-box {
+  padding-left: 2rem;
+  border: unset;
+  background: #fdfdfe;
+  width: 85%;
+  display: flex;
+  text-align: left;
+  outline: none;
+}
+
+.search-container .search .search-icon {
+  position: relative;
+  width: 15%;
+  fill: rgba(0, 0, 0, 0.6);
+}
+
+.search-container .search .search-icon .search-icon-border {
+  position: absolute;
+  height: 60%;
+  width: 1px;
+  margin-top: -30%;
+  top: 50%;
+  left: 0;
+  background: rgba(24, 49, 119, 0.2);
+}
+
+.search-container .search-suggestions {
+  display: none;
+  overflow: hidden;
+  /* width: 230px; */
+  text-overflow: ellipsis;
+  /* width: 270px; */
+  margin: 0.5rem 0 0 0;
+  box-shadow: 2px 2px 8px -1px rgba(24, 49, 119, 0.14);
+  height: 74%;
+}
+
+.show {
+  display: block !important;
+}
+
+.search-container .search-suggestions .search-items {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: rgba(0, 0, 0, 0.63);
+  padding: 0.8rem 0 0.7rem 2rem;
+}
+
+.search-container .search-suggestions .search-items:hover{
+    color: #4D8DCB;
+    cursor: pointer;
+}
