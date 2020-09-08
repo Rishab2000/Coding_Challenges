@@ -115,6 +115,14 @@ button {
   /* background-color: aqua; */
 }
 
+.item-animation-fadeout{
+  animation: item-fadeout 0.5s ease-out both;
+}
+
+.item-animation-fadein{
+  animation: item-fadein 0.5s ease-out both;
+}
+
 .circle-animation-fadeout {
   animation: circle-fadeout 0.5s ease-out both;
 }
@@ -178,5 +186,22 @@ button {
   100% {
     z-index: -1;
     display: none;
+  }
+}
+
+@keyframes item-fadein{
+  from {
+    opacity: 38%;
+  } to {
+    opacity: 100%;
+  }
+}
+
+
+@keyframes item-fadeout{
+  from {
+    opacity: 100%;
+  } to {
+    opacity: 38%;
   }
 }

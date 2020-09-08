@@ -6,15 +6,19 @@ function circleAnimation(event) {
     $(`#tick-${event.target.id.split("-").pop()}`)
       .removeClass("tick-animation-fadein")
       .addClass("tick-animation-fadeout");
+    $(`#item-${event.target.id.split("-").pop()}`)
+      .removeClass("item-animation-fadeout")
+      .addClass("item-animation-fadein");
   } else {
     $(event.target)
       .removeClass("circle-animation-fadein")
       .addClass("circle-animation-fadeout");
-   $("#tick-" + event.target.id.split("-").pop())
+    $("#tick-" + event.target.id.split("-").pop())
       .removeClass("tick-animation-fadeout")
       .addClass("tick-animation-fadein");
-    console.log("tick-" + event.target.id.split("-").pop());
-    console.log(`tick-${event.target.id.split("-").pop()}`);
+   $("#item-" + event.target.id.split("-").pop())
+    .removeClass("item-animation-fadein")
+    .addClass("item-animation-fadeout");
   }
 }
 
