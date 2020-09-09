@@ -8,15 +8,21 @@ body {
 }
 
 p {
-  display: inline;
+  display: block;
   margin: 0;
 }
 
 button {
-  display: unset;
-  font: unset;
+  margin: 0;
+  border: unset;
+  padding: unset;
   background: #ffffff;
   outline: none;
+}
+
+input {
+  padding: 0px;
+  font: unset;
 }
 
 .bold {
@@ -35,21 +41,6 @@ button {
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 400;
   font-size: calc(0.6rem + 1vw);
-}
-
-button {
-  margin: 0;
-  border: unset;
-  padding: unset;
-}
-
-p {
-  display: block;
-}
-
-input {
-  padding: 0px;
-  font: unset;
 }
 
 .input-box::placeholder {
@@ -119,8 +110,8 @@ input {
   display: block !important;
 }
 
-.show-input{
-  border-bottom:2px solid #4D8DCB; ;
+.show-input {
+  border-bottom: 2px solid #4d8dcb;
 }
 
 .search-container .search-suggestions .search-items {
