@@ -66,7 +66,7 @@ input {
   width: 80%;
 }
 
-.search-container .search {
+.search {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -75,6 +75,7 @@ input {
   border-radius: 0.5rem;
   box-shadow: 2px 2px 8px -1px rgba(24, 49, 119, 0.14);
   border: 1px solid rgba(0, 0, 0, 0.08);
+  transition: border 0.2s ease-out;
 }
 
 .search-container .search .input-box {
@@ -118,6 +119,10 @@ input {
   display: block !important;
 }
 
+.show-input{
+  border-bottom:2px solid #4D8DCB; ;
+}
+
 .search-container .search-suggestions .search-items {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -126,7 +131,7 @@ input {
   padding: 0.8rem 0 0.7rem 2rem;
 }
 
-.search-container .search-suggestions .search-items:hover{
-    color: #4D8DCB;
-    cursor: pointer;
+.search-container .search-suggestions .search-items:hover {
+  color: #4d8dcb;
+  cursor: pointer;
 }
