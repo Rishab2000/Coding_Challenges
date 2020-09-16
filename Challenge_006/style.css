@@ -1,0 +1,204 @@
+body {
+  width: 100%;
+  height: 100vh;
+  padding-top: 1px;
+  box-sizing: border-box;
+  margin: -1px 0px 0px;
+  background: #fdfdfe;
+}
+
+p {
+  display: inline;
+  margin: 0;
+}
+
+button {
+  display: unset;
+}
+
+.bold {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 600;
+  font-size: calc(0.7rem + 1vw);
+}
+
+.caption {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 300;
+  font-size: calc(0.6rem + 1vw);
+}
+
+.body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: calc(0.5rem + 1vw);
+}
+
+.card {
+  position: relative;
+  box-shadow: 2px 2px 24px -10px rgba(24, 50, 119, 0.3);
+  background: #fdfdfe;
+  border-radius: 0.6rem;
+  overflow: hidden;
+  max-width: 70%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: fit-content;
+  margin: 10% auto;
+  color: #497081;
+  padding-bottom: 2rem;
+}
+
+.card .heading_container {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin-bottom: 2rem;
+  width: 100%;
+  height: 6rem;
+}
+
+.card .heading_container .border {
+  position: absolute;
+  width: 70%;
+  height: 10%;
+  margin-left: -35%;
+  left: 50%;
+  bottom: 0;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(73, 112, 129, 0.14);
+}
+
+.card .list-container {
+  width: 70%;
+  height: 68%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.card .list-container .list-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.3rem;
+}
+
+.card .list-container .list-item .circle,
+.tick {
+  height: 10px;
+  width: 10px;
+  border: 1px;
+  fill: none;
+  stroke: rgba(73, 112, 129, 0.6);
+  stroke-width: 0.8px;
+  stroke-linecap: round;
+}
+
+.tick {
+  height: 15px;
+  width: 15px;
+  z-index: -1;
+  position: absolute;
+  right: 14%;
+  stroke-dasharray: 14.9;
+  stroke-dashoffset: 14.9;
+  /* background-color: aqua; */
+}
+
+.item-animation-fadeout{
+  animation: item-fadeout 0.5s ease-out both;
+}
+
+.item-animation-fadein{
+  animation: item-fadein 0.5s ease-out both;
+}
+
+.circle-animation-fadeout {
+  animation: circle-fadeout 0.5s ease-out both;
+}
+
+.circle-animation-fadein {
+  animation: circle-fadein 0.5s ease-out 0.5s both;
+}
+
+.tick-animation-fadeout {
+  animation: tick-fadeout 0.5s ease-out both;
+}
+
+.tick-animation-fadein {
+  animation: tick-fadein 0.5s ease-out 0.5s both;
+}
+
+@keyframes circle-fadeout {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
+
+@keyframes circle-fadein {
+  0% {
+    opacity: 0;
+    transform: scale(2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes tick-fadein {
+  0% {
+    z-index: -1;
+  }
+  1% { z-index: 0;
+    stroke-dashoffset: 14.9;
+  }
+  100% {
+    z-index: 0;
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes tick-fadeout {
+  0% {
+    z-index: 0;
+    stroke-dashoffset: 0;
+  }
+  99% {
+    z-index: 0;
+    stroke-dashoffset: 14.9;
+  }
+  100% {
+    z-index: -1;
+    display: none;
+  }
+}
+
+@keyframes item-fadein{
+  from {
+    opacity: 38%;
+  } to {
+    opacity: 100%;
+  }
+}
+
+
+@keyframes item-fadeout{
+  from {
+    opacity: 100%;
+  } to {
+    opacity: 38%;
+  }
+}
