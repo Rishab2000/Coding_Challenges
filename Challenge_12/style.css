@@ -22,7 +22,7 @@ button {
 }
 
 .outline {
- z-index: 2;
+  z-index: 2;
   position: absolute;
   top: -1px;
   left: -1px;
@@ -47,7 +47,7 @@ button {
   transition: all 0.8s ease-in-out;
 }
 
-button:hover{
+button:hover {
   background: #eaefff2c;
 }
 
