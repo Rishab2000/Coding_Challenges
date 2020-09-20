@@ -1,0 +1,170 @@
+body {
+  width: 100%;
+  height: 100vh;
+  padding-top: 1px;
+  box-sizing: border-box;
+  margin: -1px 0px 0px;
+  background: #fdfdfe;
+}
+
+p {
+  /* display: inline; */
+  margin: 0;
+}
+
+button {
+  display: unset;
+}
+
+.bold {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 600;
+  font-size: calc(1rem + 1vw);
+}
+
+.bold2 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 300;
+  font-size: calc(1.3rem + 1vw);
+}
+
+.caption {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 300;
+  font-size: calc(0.4rem + 1vw);
+}
+
+.body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: calc(0.5rem + 1vw);
+}
+
+.container {
+  width: 90%;
+  height: 20rem;
+  margin: 20% auto;
+  display: flex;
+  flex-flow: column;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 32%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.25s ease-in-out;
+}
+
+.card-hovered {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.grad1 {
+  width: 100%;
+  height: 0.5rem;
+  background: linear-gradient(to right, #4ffbdf, #00d2fc);
+}
+
+.grad2 {
+  width: 100%;
+  height: 0.5rem;
+  background: linear-gradient(to right, #00d2fc, #845ec2);
+}
+
+.grad3 {
+  width: 100%;
+  height: 0.5rem;
+  background: linear-gradient(to right, #845ec2, #ff6f91);
+}
+.image {
+  width: 100%;
+  height: 8rem;
+  padding-top: 2rem;
+  /* background-color: tomato; */
+}
+.img1 {
+  background: url("Icons-01.png");
+
+  background-position: center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+}
+
+.img2 {
+  background: url("Icons-03.png");
+
+  background-position: center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+}
+
+.img3 {
+  background: url("Icons-02.png");
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.description {
+  color: rgba(0, 0, 0, 0.83);
+  margin: 1rem 1rem;
+}
+
+.price {
+  color: rgba(0, 0, 0, 0.7);
+  margin: 1rem 1rem 2rem 1rem;
+}
+
+.features-container {
+  width: 100%;
+  margin-top: 2rem;
+  height: fit-content;
+  align-self: center;
+  display: flex;
+  flex-flow: column;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+}
+
+.features {
+  margin: 2rem 1rem;
+}
+
+.features-desc {
+  color: rgba(0, 0, 0, 0.83);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.progress-bar {
+  height: 0.8rem;
+  width: 100%;
+  border-radius: 10rem;
+  background-color: rgba(24, 49, 119, 0.07);
+}
+
+.users-fill {
+  width: 0%;
+  height: 100%;
+  border-radius: 20rem;
+  transition: all 0.25s ease-in-out;
+}
+
+.storage-fill {
+  width: 0%;
+  height: 100%;
+  border-radius: 20rem;
+  transition: all 0.25s ease-in-out;
+}
+
+.projects-fill {
+  width: 0%;
+  height: 100%;
+  border-radius: 20rem;
+  transition: all 0.25s ease-in-out;
+}
+
