@@ -45,16 +45,16 @@ function onHover(event) {
     storage.text("500 GB");
     project.text("50 Projects");
     user_fill.css({
-     background: "linear-gradient(to right, #845ec2, #ff6f91)",
-      width: "95%",
+      background: "linear-gradient(to right, #845ec2, #ff6f91)",
+      width: "100%",
     });
     storage_fill.css({
-     background: "linear-gradient(to right, #845ec2, #ff6f91)",
-      width: "90%",
+      background: "linear-gradient(to right, #845ec2, #ff6f91)",
+      width: "100%",
     });
     project_fill.css({
-     background: "linear-gradient(to right, #845ec2, #ff6f91)",
-      width: "80%",
+      background: "linear-gradient(to right, #845ec2, #ff6f91)",
+      width: "100%",
     });
   }
 }
