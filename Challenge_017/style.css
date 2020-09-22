@@ -1,0 +1,138 @@
+body {
+  width: 100%;
+  height: 100vh;
+  padding-top: 1px;
+  box-sizing: border-box;
+  margin: -1px 0px 0px;
+  background: #fdfdfe;
+  color: rgba(0, 0, 0, 0.83);
+}
+
+.bold {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 600;
+  font-size: calc(0.7rem + 1vw);
+}
+
+.caption {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  line-height: 1;
+  font-size: 0.7rem;
+}
+
+.caption2 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 100;
+  line-height: 1.4;
+  font-size: calc(0.3rem + 1vw);
+}
+
+.body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+.signup-container {
+  width: 15rem;
+  margin: 5rem auto 0 auto;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.subtitle {
+  margin: 0.5rem 0 2rem 0;
+}
+
+.link {
+  color: #5b4dfb;
+  cursor: pointer;
+  transition: color, font 0.2s ease-in-out;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+}
+
+.input-container {
+  width: 100%;
+  height: fit-content;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"] {
+  box-sizing: border-box;
+  padding: 0 0 0 1rem;
+  width: 100%;
+  height: 2.5rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 0.3rem;
+  background-color: rgba(24, 49, 119, 0.07);
+  font: inherit;
+  font-weight: 500;
+}
+
+input[type="password"] {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  font-size: 1rem;
+}
+
+input[type="password"]::placeholder {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 0.7rem;
+}
+
+input[type="text"]:focus, input[type="password"]:focus{
+  outline: none;
+  border: 1.6px solid #5b4dfb;
+  background-color: rgba(92, 77, 251, 0.1);
+}
+
+input[type="text"]:hover, input[type="password"]:hover{
+  outline: none;
+  /* border: 1.6px solid #5b4dfb; */
+  background-color: rgba(92, 77, 251, 0.1);
+}
+
+input::-webkit-input-placeholder {
+  font-weight: 400;
+  color: rgb(24, 49, 119, 0.38);
+}
+
+.subscribe {
+  margin-top: 1.5rem;
+  height: 2.2rem;
+  color: #fdfdfe;
+  border: none;
+  outline: none;
+  border-radius: 0.3rem;
+  background-color: #5b4dfb;
+  transition: background 0.2s ease-in-out;
+}
+
+.subscribe:hover {
+  background-color: #3a2aeb;
+}
+
+.link:hover {
+  color: #3a2aeb;
+  font-size: 0.81rem;
+}
+
+.hide {
+display: none;
+}
+
