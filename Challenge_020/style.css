@@ -1,0 +1,82 @@
+body {
+  width: 100%;
+  height: 100vh;
+  padding-top: 1px;
+  box-sizing: border-box;
+  margin: -1px 0px 0px;
+  background: #fdfdfe;
+}
+
+p {
+  margin: 0;
+}
+
+.bold {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700;
+  font-size: calc(1rem + 1vw);
+}
+
+.bold2 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: calc(1rem + 1vw);
+}
+
+.card {
+  width: 28rem;
+  height: 28rem;
+  margin: 10% auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(255, 45, 85);
+  color: rgb(242, 242, 247);
+  border-radius: 0.6rem;
+  box-shadow: 2px 2px 24px -10px rgba(24, 50, 119, 0.3);
+  text-shadow: 2px 2px 2px rgb(228, 22, 60);
+}
+
+.pre {
+  height: 43px;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: row;
+}
+
+.outer {
+  margin-left: 0.8rem;
+  height: 43px;
+  overflow: hidden;
+}
+
+.inner {
+  animation-name: rotate;
+  animation-duration:8s ;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes rotate {
+  0%,
+  20% {
+    transform: translateY(0);
+  }
+  25%,
+  45% {
+    transform: translateY(-42.5px);
+  }
+  50%,
+  70% {
+    transform: translateY(-85.5px);
+  }
+  75%,
+  95% {
+    transform: translateY(-128.5px);
+  }
+  100% {
+    transform: translateY(-172.5px);
+  }
+}
