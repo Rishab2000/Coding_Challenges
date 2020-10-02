@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  padding-top: 1px;
+  margin: -1px 0px 0px;
+  background: #fdfdfe;
+}
+
+.caption {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: calc(0.4rem + 1vw);
+}
+
+.frame {
+  width: 20rem;
+  height: 20rem;
+  margin: 7% auto 0 auto;
+  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.1);
+  /* perspective: 5rem; */
+}
+
+.button {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button_face {
+  position: absolute;
+  width: 6rem;
+  height: 2.3rem;
+  box-shadow: 0 0 0 1.2px rgb(24, 50, 119, 0.14);
+  color: rgb(24, 50, 119, 0.83);
+  overflow: hidden;
+  border-radius: 0.2rem;
+  backface-visibility: hidden;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.6s;
+}
+
+.inner {
+  position: absolute;
+  z-index: -1;
+  background-color: rgb(24, 50, 119, 0.83);
+  border-radius: 200rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.inner--back {
+ z-index: -1;
+ position: absolute;
+ height: 100%;
+ width: 100%;
+  background-color: rgb(24, 50, 119, 0.83);
+}
+
+.button_face--back {
+  transform: rotateX(180deg);
+  color: rgb(242, 242, 245);
+}
+
+.button_flip {
+  transform: rotateX(180deg);
+}
+
+.explode {
+  animation-name: explode;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.displode {
+  animation-name: displode;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.button_face--front:hover {
+  color: rgb(242, 242, 245);
+  box-shadow: none;
+}
+
+@keyframes explode {
+  0% {
+    width: 0rem;
+    height: 0rem;
+    opacity: 0.4;
+    translate: (-50%, -50%);
+  }
+  100% {
+    opacity: 1;
+    width: 15rem;
+    height: 15rem;
+    translate: (-50%, -50%);
+  }
+}
+
+@keyframes displode {
+  0% {
+    width: 15rem;
+    height: 15rem;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.4;
+    width: 0rem;
+    height: 0rem;
+  }
+}
