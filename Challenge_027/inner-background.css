@@ -1,0 +1,17 @@
+.inner-background {
+  position: absolute;
+  background: rgb(29, 161, 62);
+  top: 50%;
+  left: 50%;
+  width: 1rem;
+  height: 1rem;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  border-radius: 20rem;
+  transition: transform 0.6s ease-in;
+}
+
+#clicker:checked ~ .inner-background {
+  transition: transform 0.6s ease-out;
+  transform: translate(-50%, -50%) scale(35);
+}

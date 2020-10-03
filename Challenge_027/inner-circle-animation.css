@@ -1,0 +1,18 @@
+.inner-circle {
+  position: absolute;
+  border: 1px solid rgb(242, 242, 247);
+  top: 50%;
+  left: 50%;
+  width: 1rem;
+  height: 1rem;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  border-radius: 20rem;
+  transition: transform 0.6s ease-in, opacity 0.3s ease-in;
+}
+
+#clicker:checked ~ .inner-circle {
+  transition: transform 0.6s ease-out, opacity 0.3s ease-out 0.3s;
+  transform: translate(-50%, -50%) scale(9);
+  opacity: 0;
+}

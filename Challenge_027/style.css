@@ -1,0 +1,62 @@
+body {
+  width: 100%;
+  height: 100vh;
+  padding-top: 1px;
+  box-sizing: border-box;
+  margin: -1px 0px 0px;
+  background: #fdfdfe;
+}
+
+.card {
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  margin: 7% auto 0 auto;
+  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.1);
+  background: rgb(48, 209, 88);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+input[type="checkbox"] {
+  z-index: 2;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  opacity: 0;
+}
+
+/* .lable {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+} */
+.circle {
+  background-color: rgb(48, 209, 88);
+  position: absolute;
+  cursor: pointer;
+  height: 2.2rem;
+  width: 2.2rem;
+  margin: 10% auto;
+  z-index: 1;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1),
+    inset 2px 2px 4px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+    /* transform: rotate(0) scale(1); */
+  transition: all 0.6s ease-in-out;
+}
+
+#clicker:checked ~ .circle {
+  /* transition: all 0.6s ease-in-out; */
+    transform: rotate(180deg) scale(1.1);
+  background-color: rgb(242, 242, 247);
+  border-radius: 0.1rem;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1),
+    inset 2px 2px 4px 0 rgba(0, 0, 0, 0);
+}

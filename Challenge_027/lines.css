@@ -1,0 +1,146 @@
+:root {
+  --transX: 8rem;
+  --opacity: 0;
+}
+
+.line {
+  position: absolute;
+  border: unset;
+  top: 50%;
+  left: 50%;
+  width: 1rem;
+  height: 2px;
+  border-radius: 20rem;
+  background-color: rgb(242, 242, 247);
+  transform-origin: left;
+  opacity: 1;
+  transition: transform 0.6s ease-in, opacity 0.3s ease-in ;
+}
+
+.ln2 {
+  transform: rotate(30deg);
+}
+
+.ln3 {
+  transform: rotate(60deg);
+}
+
+.ln4 {
+  transform: rotate(90deg);
+}
+
+.ln5 {
+  transform: rotate(120deg);
+}
+
+.ln6 {
+  transform: rotate(150deg);
+}
+
+.ln7 {
+  transform: rotate(180deg);
+}
+
+.ln8 {
+  transform: rotate(210deg);
+}
+
+.ln9 {
+  transform: rotate(240deg);
+}
+
+.ln10 {
+  transform: rotate(270deg);
+}
+
+.ln11 {
+  transform: rotate(300deg);
+}
+
+.ln12 {
+  transform: rotate(330deg);
+}
+
+#clicker:checked ~ .ln1 {
+  transition: transform 0.6s ease-out, opacity 0.3s ease-out 0.3s,
+    -webkit-transform 0.6s ease-out;
+  transform: translateX(var(--transX));
+  opacity: 0;
+}
+
+#clicker:checked ~ .ln2 {
+  transition: transform 0.6s ease-out, opacity 0.3s ease-out 0.3s,
+    -webkit-transform 0.6s ease-out;
+  transform: rotate(30deg) translateX(var(--transX));
+  opacity: 0;
+}
+
+#clicker:checked ~ .ln3 {
+  transition: transform 0.6s ease-out, opacity 0.3s ease-out 0.3s,
+    -webkit-transform 0.6s ease-out;
+  transform: rotate(60deg) translateX(var(--transX));
+  opacity: 0;
+}
+
+#clicker:checked ~ .ln4 {
+  transition: transform 0.6s ease-out, opacity 0.3s ease-out 0.3s,
+    -webkit-transform 0.6s ease-out;
+  transform: rotate(90deg) translateX(var(--transX));
+  opacity: 0;
+}
+
+#clicker:checked ~ .ln5 {
+  transition: transform 0.6s ease-out, opacity 0.3s ease-out 0.3s,
+    -webkit-transform 0.6s ease-out;
+  transform: rotate(120deg) translateX(var(--transX));
+  opacity: 0;
+}
+
+#clicker:checked ~ .ln6 {
+  transition: transform 0.6s ease-out, opacity 0.3s ease-out 0.3s,
+    -webkit-transform 0.6s ease-out;
+  transform: rotate(150deg) translateX(var(--transX));
+  opacity: 0;
+}
+
+#clicker:checked ~ .ln7 {
+  transition: transform 0.6s ease-out, opacity 0.3s ease-out 0.3s,
+    -webkit-transform 0.6s ease-out;
+  transform: rotate(180deg) translateX(var(--transX));
+  opacity: 0;
+}
+
+#clicker:checked ~ .ln8 {
+  transition: transform 0.6s ease-out, opacity 0.3s ease-out 0.3s,
+    -webkit-transform 0.6s ease-out;
+  transform: rotate(210deg) translateX(var(--transX));
+  opacity: 0;
+}
+
+#clicker:checked ~ .ln9 {
+  transition: transform 0.6s ease-out, opacity 0.3s ease-out 0.3s,
+    -webkit-transform 0.6s ease-out;
+  transform: rotate(240deg) translateX(var(--transX));
+  opacity: 0;
+}
+
+#clicker:checked ~ .ln10 {
+  transition: transform 0.6s ease-out, opacity 0.3s ease-out 0.3s,
+    -webkit-transform 0.6s ease-out;
+  transform: rotate(270deg) translateX(var(--transX));
+  opacity: 0;
+}
+
+#clicker:checked ~ .ln11 {
+  transition: transform 0.6s ease-out, opacity 0.3s ease-out 0.3s,
+    -webkit-transform 0.6s ease-out;
+  transform: rotate(300deg) translateX(var(--transX));
+  opacity: 0;
+}
+
+#clicker:checked ~ .ln12 {
+  transition: transform 0.6s ease-out, opacity 0.3s ease-out 0.3s,
+    -webkit-transform 0.6s ease-out;
+  transform: rotate(330deg) translateX(var(--transX));
+  opacity: 0;
+}
