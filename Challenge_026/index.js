@@ -2,7 +2,7 @@ $(".button_face").on("click", function () {
   $(".button").toggleClass("button_flip");
 });
 
-$(".button_face").hover(
+$(".button_face--front").hover(
   function (event) {
     var parentOffest = $(this).offset();
     var pX = event.pageX - parentOffest.left;
